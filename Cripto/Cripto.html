@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Alert</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Crypto Alert</h1>
+      <div id="crypto-list" class="crypto-list loader">Cargando precios...</div>
+      <div class="alert-config">
+        <h2>Establecer alerta</h2>
+        <label for="crypto">Criptomoneda:</label>
+        <select id="crypto"></select>
+        <label for="price">Precio objetivo (USD):</label>
+        <input type="number" id="price" step="0.01" />
+        <button onclick="setAlert()">Establecer Alerta</button>
+      </div>
+      <div id="alerts" class="alerts"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
